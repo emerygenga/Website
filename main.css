@@ -54,9 +54,12 @@ body {
 
 .title{
   padding: 10px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .content{
+  margin: 10px;
   padding: 10px;
 }
 
@@ -89,4 +92,13 @@ body {
   background-color: #ff5c5c;
   color: white;
   cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.picture{
+  width: 250px;
+  margin: 10px;
 }

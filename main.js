@@ -28,4 +28,9 @@ function loadJson(contnt){
   $("#JSON_button").html (content);
 }
 
+function getContent(){
+  
+}
+
 $("JSON_button").click(loadJSONAsHTML);
+$("zombies").click(getContent)

@@ -22,6 +22,7 @@
           <li><a href="bio.html">About Me</a></li>
           <li><a href="coding.html">Coding</a></li>
           <li><a href="acting.html">Acting</a></li>
+          <li><a href="newsfeed.html">News Feed</a></li>
         </ul>
       </div>
     </div>
@@ -31,14 +32,48 @@
     <div class="content">
       <button id="game_button">Play my Game</button>
       <div id="game_content"></div>
-      <button id="JSON_button">JSON</button>
+      <button id="zombies">Zombies</button>
       <p><a href="https://github.com/emerygenga/Website">GitHub</a><p>
       <p><a href="https://docs.google.com/document/d/1oc6XJwu8PcpQnTf1Zdxebp3yjCBuZ_R4EJPpaaH0TIs/edit">Tech Spec</a><p>
+
+
+        <input type="text" id="chocolate_input"></input>
+        <button id="player_vote_button">Vote on Best Ping-Pong player</button>
+        <button id="latest_vote">Get Latest Vote</button>
+        <p>
+          <h3>
+            <div style="display:inline-block;">Latest Vote:</div>
+            <div style="display:inline-block;" id="chocolate_output"></div>
+          </h3>
+        </p> 
+
+
+
     </div>
 </div>
 
 </body>
 
 <script src="main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6rkI5xNLJQAvyMunG7MrgiPuQsvJ3_OE",
+    authDomain: "emerywebsite-cf2d7.firebaseapp.com",
+    databaseURL: "https://emerywebsite-cf2d7.firebaseio.com",
+    projectId: "emerywebsite-cf2d7",
+    storageBucket: "emerywebsite-cf2d7.appspot.com",
+    messagingSenderId: "56543489427",
+    appId: "1:56543489427:web:2ef9b102d1f6f783120c66",
+    measurementId: "G-8CPCNCXT6C"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="database.js"></script>;
 
 </html>
